@@ -1,0 +1,172 @@
+body {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+.calculator {
+  display: grid;
+  justify-items: center;
+  margin-top: 40px;
+  border: 1px solid black;
+  width: 400px;
+  height: 600px;
+  border-radius: 5%;
+  grid-template-areas:
+    "bar bar bar bar"
+    "reset name name name"
+    "seven eight nine min"
+    "four five six divide"
+    "one two three times"
+    "comma zero equal plus";
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 30px;
+  text-align: center;
+}
+
+#display {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 20px;
+  width: 350px;
+  height: 100px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 255, 0.958);
+  grid-area: bar;
+  text-align: left;
+  padding: 3px;
+}
+
+.name {
+  border: 2px solid green;
+  width: 260px;
+  height: 80px;
+  border-radius: 5px;
+  grid-area: name;
+  line-height: 80px;
+  cursor: pointer;
+}
+
+button {
+  font-size: 28px;
+  cursor: pointer;
+}
+
+button:nth-of-type(1) {
+  border: 2px solid green;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  grid-area: reset;
+}
+button:nth-of-type(2) {
+  border: 2px solid green;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  grid-area: seven;
+}
+button:nth-of-type(3) {
+  border: 2px solid green;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  grid-area: eight;
+}
+button:nth-of-type(4) {
+  border: 2px solid green;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  grid-area: nine;
+}
+button:nth-of-type(5) {
+  border: 2px solid green;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  grid-area: divide;
+}
+button:nth-of-type(6) {
+  border: 2px solid green;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  grid-area: four;
+}
+button:nth-of-type(7) {
+  border: 2px solid green;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  grid-area: five;
+}
+button:nth-of-type(8) {
+  border: 2px solid green;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  grid-area: six;
+}
+button:nth-of-type(9) {
+  border: 2px solid green;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  grid-area: times;
+}
+button:nth-of-type(10) {
+  border: 2px solid green;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  grid-area: one;
+}
+button:nth-of-type(11) {
+  border: 2px solid green;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  grid-area: two;
+}
+button:nth-of-type(12) {
+  border: 2px solid green;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  grid-area: three;
+}
+button:nth-of-type(13) {
+  border: 2px solid green;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  grid-area: min;
+}
+button:nth-of-type(14) {
+  border: 2px solid green;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  grid-area: zero;
+}
+button:nth-of-type(15) {
+  border: 2px solid green;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  grid-area: comma;
+}
+button:nth-of-type(16) {
+  border: 2px solid green;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  grid-area: equal;
+}
+button:nth-of-type(17) {
+  border: 2px solid green;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  grid-area: plus;
+}
